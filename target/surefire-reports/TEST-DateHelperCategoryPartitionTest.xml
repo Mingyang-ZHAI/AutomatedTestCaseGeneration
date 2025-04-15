@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="DateHelperCategoryPartitionTest" time="0.037" tests="15" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/mingyang/Downloads/ECE/24winter/ELG6187Testing/TestingProject/testing_project_code/target/test-classes:/Users/mingyang/Downloads/ECE/24winter/ELG6187Testing/TestingProject/testing_project_code/target/classes:/Users/mingyang/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.3/junit-jupiter-api-5.9.3.jar:/Users/mingyang/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/mingyang/.m2/repository/org/junit/platform/junit-platform-commons/1.9.3/junit-platform-commons-1.9.3.jar:/Users/mingyang/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/mingyang/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.3/junit-jupiter-engine-5.9.3.jar:/Users/mingyang/.m2/repository/org/junit/platform/junit-platform-engine/1.9.3/junit-platform-engine-1.9.3.jar:/Users/mingyang/.m2/repository/org/pitest/pitest-junit5-plugin/0.15/pitest-junit5-plugin-0.15.jar:"/>
+    <property name="java.vm.vendor" value="JetBrains s.r.o."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="user.timezone" value="America/Toronto"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="CA"/>
+    <property name="sun.boot.library.path" value="/Users/mingyang/Library/Java/JavaVirtualMachines/jbr-17.0.12/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/mingyang/Downloads/ECE/24winter/ELG6187Testing/TestingProject/testing_project_code/target/surefire/surefirebooter-20250413231227930_3.jar /Users/mingyang/Downloads/ECE/24winter/ELG6187Testing/TestingProject/testing_project_code/target/surefire 2025-04-13T23-12-27_885-jvmRun1 surefire-20250413231227930_1tmp surefire_0-20250413231227930_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/mingyang/Downloads/ECE/24winter/ELG6187Testing/TestingProject/testing_project_code/target/test-classes:/Users/mingyang/Downloads/ECE/24winter/ELG6187Testing/TestingProject/testing_project_code/target/classes:/Users/mingyang/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.3/junit-jupiter-api-5.9.3.jar:/Users/mingyang/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/mingyang/.m2/repository/org/junit/platform/junit-platform-commons/1.9.3/junit-platform-commons-1.9.3.jar:/Users/mingyang/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/mingyang/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.3/junit-jupiter-engine-5.9.3.jar:/Users/mingyang/.m2/repository/org/junit/platform/junit-platform-engine/1.9.3/junit-platform-engine-1.9.3.jar:/Users/mingyang/.m2/repository/org/pitest/pitest-junit5-plugin/0.15/pitest-junit5-plugin-0.15.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/mingyang"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-07-16"/>
+    <property name="java.home" value="/Users/mingyang/Library/Java/JavaVirtualMachines/jbr-17.0.12/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/mingyang/Downloads/ECE/24winter/ELG6187Testing/TestingProject/testing_project_code"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="intellij.os.virtualization" value="none"/>
+    <property name="jbr.virtualization.information" value="No virtualization detected"/>
+    <property name="surefire.real.class.path" value="/Users/mingyang/Downloads/ECE/24winter/ELG6187Testing/TestingProject/testing_project_code/target/surefire/surefirebooter-20250413231227930_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="17.0.12+1-b1207.37"/>
+    <property name="user.name" value="mingyang"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="15.3"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="JBR-17.0.12+1-1207.37-nomod"/>
+    <property name="localRepository" value="/Users/mingyang/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/91/_8trmtfn3qj0l83kpbnf1pk40000gn/T/"/>
+    <property name="java.version" value="17.0.12"/>
+    <property name="user.dir" value="/Users/mingyang/Downloads/ECE/24winter/ELG6187Testing/TestingProject/testing_project_code"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/mingyang/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="JetBrains s.r.o."/>
+    <property name="java.vm.version" value="17.0.12+1-b1207.37"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="testSystemTimeZoneIndependence" classname="DateHelperCategoryPartitionTest" time="0.019"/>
+  <testcase name="testEpochTime" classname="DateHelperCategoryPartitionTest" time="0.003">
+    <system-out><![CDATA[Formatted from DateHelper: 31/12/1969
+Expected (system default): 31/12/1969
+]]></system-out>
+  </testcase>
+  <testcase name="testLongMaxValue" classname="DateHelperCategoryPartitionTest" time="0.002"/>
+  <testcase name="testNear2038Boundary" classname="DateHelperCategoryPartitionTest" time="0.0"/>
+  <testcase name="testCurrentTime" classname="DateHelperCategoryPartitionTest" time="0.002"/>
+  <testcase name="testInvalidLeapDate" classname="DateHelperCategoryPartitionTest" time="0.001"/>
+  <testcase name="testOneHourAgo" classname="DateHelperCategoryPartitionTest" time="0.0"/>
+  <testcase name="testOneDayFuture" classname="DateHelperCategoryPartitionTest" time="0.001"/>
+  <testcase name="testLeapSecondSimulation" classname="DateHelperCategoryPartitionTest" time="0.001"/>
+  <testcase name="test12HourFormat" classname="DateHelperCategoryPartitionTest" time="0.0">
+    <system-out><![CDATA[Formatted time: 13/04/2025, 11:12 p.m.
+]]></system-out>
+  </testcase>
+  <testcase name="testLeapYearDate" classname="DateHelperCategoryPartitionTest" time="0.0">
+    <system-out><![CDATA[Leap year date: 29/02/2020
+]]></system-out>
+  </testcase>
+  <testcase name="testNegativeTime" classname="DateHelperCategoryPartitionTest" time="0.0"/>
+  <testcase name="testLongMinValue" classname="DateHelperCategoryPartitionTest" time="0.0"/>
+  <testcase name="testMidnightUtc" classname="DateHelperCategoryPartitionTest" time="0.003"/>
+  <testcase name="testStartOfDay" classname="DateHelperCategoryPartitionTest" time="0.0">
+    <system-out><![CDATA[Start of day formatted: 30/09/2023, 08:00 p.m.
+]]></system-out>
+  </testcase>
+</testsuite>

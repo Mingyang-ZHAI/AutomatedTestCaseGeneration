@@ -1,0 +1,70 @@
+<project name="quadratic-testing" default="pit" basedir=".">
+
+    <!-- 基本路径设置 -->
+    <property name="src.dir" value="src/main/java"/>
+    <property name="test.dir" value="src/test/java"/>
+    <property name="build.classes" value="target/classes"/>
+    <property name="build.test.classes" value="target/test-classes"/>
+    <property name="lib.dir" value="lib"/>
+
+    <!-- 编译代码 -->
+    <target name="compile">
+        <mkdir dir="${build.classes}"/>
+        <mkdir dir="${build.test.classes}"/>
+
+        <javac includeantruntime="false" srcdir="${src.dir}" destdir="${build.classes}"/>
+
+        <javac includeantruntime="false" srcdir="${test.dir}" destdir="${build.test.classes}">
+            <classpath>
+                <pathelement path="${build.classes}"/>
+                <fileset dir="${lib.dir}">
+                    <include name="*.jar"/>
+                </fileset>
+            </classpath>
+        </javac>
+    </target>
+
+
+    <!-- PIT mutation test -->
+    <target name="pit" depends="compile">
+        <java classname="org.pitest.mutationtest.commandline.MutationCoverageReport" fork="true" failonerror="true">
+            <classpath>
+                <pathelement path="${build.classes}"/>
+                <pathelement path="${build.test.classes}"/>
+                <fileset dir="${lib.dir}">
+                    <include name="*.jar"/>
+                </fileset>
+            </classpath>
+
+            <arg value="--testPlugin"/>
+            <arg value="junit5"/>
+
+            <arg value="--reportDir"/>
+            <arg value="pit-reports"/>
+
+            <arg value="--targetClasses"/>
+            <arg value="DateHelper,Quadratic"/>
+
+            <arg value="--targetTests"/>
+            <arg value="DateHelperMetamorphicTest,DateHelperCategoryPartitionTest,DateHelperMutationImprovementTest,QuadraticMetamorphicTest,QuadraticCategoryPartitionTest,QuadraticMutationImprovementTest"/>
+
+            <arg value="--sourceDirs"/>
+            <arg value="src/main/java"/>
+
+            <arg value="--classPath"/>
+            <arg path="${build.classes}:${build.test.classes}:${lib.dir}/*"/>
+
+            <arg value="--testPlugin"/>
+            <arg value="junit5"/>
+
+            <arg value="--verbose"/>
+
+            <arg value="--outputFormats"/>
+            <arg value="HTML"/>
+        </java>
+    </target>
+
+
+    <echo message="Using classpath: ${build.classes}:${build.test.classes}:${lib.dir}/*"/>
+
+</project>
