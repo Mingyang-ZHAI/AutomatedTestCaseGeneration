@@ -44,6 +44,7 @@ ant run-mutation
 ```
 
 ## Folder Structure
+```bash
 src/
 ├── main/java/
 │   ├── Quadratic.java
@@ -52,7 +53,7 @@ src/
 │   ├── CategoryPartitionTest.java
 │   ├── MetamorphicTest.java
 │   └── MutationImprovementTest.java
-
+```
 
 
 Feel free to fork or clone for experimentation.
