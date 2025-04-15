@@ -41,7 +41,7 @@ ant run-tests
 
 # Run PIT for mutation testing
 ant run-mutation
-
+```bash
 
 ## Folder Structure
 src/
